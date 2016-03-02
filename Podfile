@@ -4,6 +4,11 @@ source 'https://github.com/ExoticObjects/test_sibling_dependencies_pod_a_framewo
 platform :ios, '9.0'
 use_frameworks!
 
+pre_install do |installer|
+  # workaround for https://github.com/CocoaPods/CocoaPods/issues/3289
+  def installer.verify_no_static_framework_transitive_dependencies; end
+end
+
 def common_pods_for_target
 
   # point at repo
@@ -13,8 +18,12 @@ def common_pods_for_target
   # pod 'test_sibling_dependencies_pod_a', :path => '../test_sibling_dependencies_pod_a/'
 
   # point at framework made from dev pod
-  pod 'test_sibling_dependencies_pod_a_framework', :path => '../test_sibling_dependencies_pod_a_framework/'
+  # pod 'test_sibling_dependencies_pod_a_framework', :path => '../test_sibling_dependencies_pod_a_framework/'
 
+  # or at that same pod on github
+  pod 'test_sibling_dependencies_pod_a_framework', :git => 'https://github.com/ExoticObjects/test_sibling_dependencies_pod_a_framework.git'
+  
+  # local pod_b has a dependency on the pod_a framework 
   pod 'test_sibling_dependencies_pod_b', :path => '../test_sibling_dependencies_pod_b/'
 
 end
