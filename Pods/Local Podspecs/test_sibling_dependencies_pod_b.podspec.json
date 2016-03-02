@@ -1,0 +1,19 @@
+{
+  "name": "test_sibling_dependencies_pod_b",
+  "version": "0.0.0",
+  "summary": "CocoaPods documentation could be improved...",
+  "description": "Pod description. It's a pod",
+  "homepage": "https://github.com/ExoticObjects/test_sibling_dependencies_pod_b",
+  "license": "MIT",
+  "authors": {
+    "Exotic Objects": "jim@exoticobjects.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/ExoticObjects/test_sibling_dependencies_pod_b.git"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*"
+}

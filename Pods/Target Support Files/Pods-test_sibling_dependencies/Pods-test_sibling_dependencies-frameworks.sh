@@ -82,3 +82,10 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-test_sibling_dependencies/test_sibling_dependencies_pod_b.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-test_sibling_dependencies/test_sibling_dependencies_pod_b.framework"
+fi

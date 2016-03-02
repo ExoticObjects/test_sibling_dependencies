@@ -1,14 +1,19 @@
 PODS:
-  - test_sibling_dependencies_pod_a (0.0.0)
+  - test_sibling_dependencies_pod_a_framework (0.0.0)
+  - test_sibling_dependencies_pod_b (0.0.0)
 
 DEPENDENCIES:
-  - test_sibling_dependencies_pod_a (from `../test_sibling_dependencies_pod_a_framework/`)
+  - test_sibling_dependencies_pod_a_framework (from `../test_sibling_dependencies_pod_a_framework/`)
+  - test_sibling_dependencies_pod_b (from `../test_sibling_dependencies_pod_b/`)
 
 EXTERNAL SOURCES:
-  test_sibling_dependencies_pod_a:
+  test_sibling_dependencies_pod_a_framework:
     :path: "../test_sibling_dependencies_pod_a_framework/"
+  test_sibling_dependencies_pod_b:
+    :path: "../test_sibling_dependencies_pod_b/"
 
 SPEC CHECKSUMS:
-  test_sibling_dependencies_pod_a: e3b6f3dc7c9784bef25a1cfe902848793d9b75c3
+  test_sibling_dependencies_pod_a_framework: 41a0dc0ae8321d7be2ecc77dac1e2af9a34da063
+  test_sibling_dependencies_pod_b: 2fefdf7f905ecb215ee1643f2915c4d1413437dc
 
 COCOAPODS: 0.39.0

@@ -1,0 +1,6 @@
+framework module test_sibling_dependencies_pod_b {
+  umbrella header "test_sibling_dependencies_pod_b-umbrella.h"
+
+  export *
+  module * { export * }
+}

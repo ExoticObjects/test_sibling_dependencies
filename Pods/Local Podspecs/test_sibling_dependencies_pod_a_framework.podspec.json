@@ -1,5 +1,6 @@
 {
-  "name": "test_sibling_dependencies_pod_a",
+  "name": "test_sibling_dependencies_pod_a_framework",
+  "module_name": "test_sibling_dependencies_pod_a",
   "version": "0.0.0",
   "summary": "CocoaPods documentation could be improved...",
   "license": "MIT",
