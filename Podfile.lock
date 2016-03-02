@@ -2,11 +2,9 @@ PODS:
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
-  - Socket.IO-Client-Swift (5.3.1)
   - STHTTPRequest (1.0.2)
   - test_sibling_dependencies_pod_a (0.0.0):
     - SDWebImage
-    - Socket.IO-Client-Swift (= 5.3.1)
     - STHTTPRequest (= 1.0.2)
 
 DEPENDENCIES:
@@ -18,8 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
-  Socket.IO-Client-Swift: abfed28a1e4ce09fb12d75cfaecc5b719bc584ea
   STHTTPRequest: f4ca4e3ca31ebd9b54c134aa721ddd1711f1089d
-  test_sibling_dependencies_pod_a: 4cfd1ce760a33c7bd9670371ae5e22f84fed17f6
+  test_sibling_dependencies_pod_a: 9fdb2c3c50ad96e5eec92ba8282d98ba03da5c67
 
 COCOAPODS: 0.39.0

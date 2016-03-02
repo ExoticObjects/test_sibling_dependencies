@@ -22,9 +22,6 @@
     ],
     "SDWebImage": [
 
-    ],
-    "Socket.IO-Client-Swift": [
-      "5.3.1"
     ]
   }
 }
