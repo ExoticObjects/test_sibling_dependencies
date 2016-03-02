@@ -4,7 +4,9 @@ use_frameworks!
 
 def common_pods_for_target
   # pod 'test_sibling_dependencies_pod_a', :git => 'https://github.com/ExoticObjects/test_sibling_dependencies_pod_a.git'
-    pod 'test_sibling_dependencies_pod_a', :path => '../test_sibling_dependencies_pod_a/'
+    # pod 'test_sibling_dependencies_pod_a', :path => '../test_sibling_dependencies_pod_a/'
+    pod 'test_sibling_dependencies_pod_a', :path => '../test_sibling_dependencies_pod_a_framework/'
+
 end
 
 # ADD PODS TO XCODE TARGETS

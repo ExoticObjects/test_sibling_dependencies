@@ -82,14 +82,3 @@ strip_invalid_archs() {
   fi
 }
 
-
-if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-test_sibling_dependencies/SDWebImage.framework"
-  install_framework "Pods-test_sibling_dependencies/STHTTPRequest.framework"
-  install_framework "Pods-test_sibling_dependencies/test_sibling_dependencies_pod_a.framework"
-fi
-if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-test_sibling_dependencies/SDWebImage.framework"
-  install_framework "Pods-test_sibling_dependencies/STHTTPRequest.framework"
-  install_framework "Pods-test_sibling_dependencies/test_sibling_dependencies_pod_a.framework"
-fi

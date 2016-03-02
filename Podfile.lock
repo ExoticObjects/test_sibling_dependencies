@@ -1,22 +1,14 @@
 PODS:
-  - SDWebImage (3.7.5):
-    - SDWebImage/Core (= 3.7.5)
-  - SDWebImage/Core (3.7.5)
-  - STHTTPRequest (1.0.2)
-  - test_sibling_dependencies_pod_a (0.0.0):
-    - SDWebImage
-    - STHTTPRequest (= 1.0.2)
+  - test_sibling_dependencies_pod_a (0.0.0)
 
 DEPENDENCIES:
-  - test_sibling_dependencies_pod_a (from `../test_sibling_dependencies_pod_a/`)
+  - test_sibling_dependencies_pod_a (from `../test_sibling_dependencies_pod_a_framework/`)
 
 EXTERNAL SOURCES:
   test_sibling_dependencies_pod_a:
-    :path: "../test_sibling_dependencies_pod_a/"
+    :path: "../test_sibling_dependencies_pod_a_framework/"
 
 SPEC CHECKSUMS:
-  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
-  STHTTPRequest: f4ca4e3ca31ebd9b54c134aa721ddd1711f1089d
-  test_sibling_dependencies_pod_a: 9fdb2c3c50ad96e5eec92ba8282d98ba03da5c67
+  test_sibling_dependencies_pod_a: e3b6f3dc7c9784bef25a1cfe902848793d9b75c3
 
 COCOAPODS: 0.39.0
