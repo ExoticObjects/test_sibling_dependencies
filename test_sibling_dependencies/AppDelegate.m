@@ -6,6 +6,7 @@
 //  Copyright © 2016 Jim Kremens. All rights reserved.
 //
 
+#import <test_sibling_dependencies_pod_a/PodAHelper.h>
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	// Override point for customization after application launch.
+
+	PodAHelper * helper = [[PodAHelper alloc] init];
+	[helper helperMethod];
+
 	return YES;
 }
 
