@@ -3,7 +3,8 @@ platform :ios, '9.0'
 use_frameworks!
 
 def common_pods_for_target
-  pod 'JalapenoFramework', :git => 'https://github.com/ExoticObjects/JalapenoFramework.git', :tag => '0.0.0'
+  # pod 'test_sibling_dependencies_pod_a', :git => 'https://github.com/ExoticObjects/test_sibling_dependencies_pod_a.git'
+    pod 'test_sibling_dependencies_pod_a', :path => '../test_sibling_dependencies_pod_a/'
 end
 
 # ADD PODS TO XCODE TARGETS

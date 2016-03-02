@@ -16,3 +16,12 @@ xcuserdata
 # svn & cvs
 .svn
 CVS
+.idea/.name
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/runConfigurations/test_sibling_dependencies_pod_a.xml
+.idea/test_sibling_dependencies.iml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/xcode.xml
