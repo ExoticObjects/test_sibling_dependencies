@@ -26,6 +26,7 @@ def common_pods_for_target
   # point at framework made from dev pod
   # pod 'test_sibling_dependencies_pod_a_framework', :path => '../test_sibling_dependencies_pod_a_framework/'
 
+
   # point at framework on github. This framework can be accessed from the app delegate, but not from pod_b (below).
   pod 'test_sibling_dependencies_pod_a_framework', :git => 'https://github.com/ExoticObjects/test_sibling_dependencies_pod_a_framework.git'
   
