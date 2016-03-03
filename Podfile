@@ -10,11 +10,6 @@ source 'https://github.com/ExoticObjects/test_sibling_dependencies_pod_a_framewo
 platform :ios, '9.0'
 use_frameworks!
 
-pre_install do |installer|
-  # workaround for https://github.com/CocoaPods/CocoaPods/issues/3289
-  def installer.verify_no_static_framework_transitive_dependencies; end
-end
-
 def common_pods_for_target
 
   # point at repo of source code
@@ -36,6 +31,39 @@ def common_pods_for_target
   # pod_b from github
   # pod 'test_sibling_dependencies_pod_b', :git => 'git@github.com:ExoticObjects/test_sibling_dependencies_pod_b.git'
 
+end
+
+
+pre_install do |installer|
+  # workaround for https://github.com/CocoaPods/CocoaPods/issues/3289
+  def installer.verify_no_static_framework_transitive_dependencies; end
+end
+
+
+# POST INSTALL HOOK
+post_install do |installer|
+
+  files = Dir.glob("*.xcodeproj")
+  proj_file = files[0]
+  app_project = Xcodeproj::Project.open(proj_file);
+
+  puts "{"
+  app_project.native_targets.each do |target| #Set allow non modular includes on app target to 'yes'
+
+    # puts 'native_targets: ' + target.inspect
+    target.build_configurations.each do |config|
+      config.build_settings['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
+      puts '"MAIN_TARGET_' + config.name + '_SETTINGS" : ' + config.build_settings.to_json + ","
+    end
+  end
+
+  app_project.save # Can't forget this or nothing will happen! (See https://github.com/CocoaPods/CocoaPods/issues/4618)
+
+  installer.pods_project.build_configuration_list.build_configurations.each do |configuration| #Set allow non modular includes on POD target to 'yes'
+    configuration.build_settings['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
+    puts '"POD_TARGET_' + configuration.name + '_SETTINGS" : ' + configuration.build_settings.to_json  + ","
+  end
+  puts "}"
 end
 
 target :test_sibling_dependencies do

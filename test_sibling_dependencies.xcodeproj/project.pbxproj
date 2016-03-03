@@ -691,6 +691,8 @@ fi
 			<dict>
 				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
 				<string>AppIcon</string>
+				<key>CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES</key>
+				<string>YES</string>
 				<key>INFOPLIST_FILE</key>
 				<string>test_sibling_dependencies/Info.plist</string>
 				<key>LD_RUNPATH_SEARCH_PATHS</key>
@@ -713,6 +715,8 @@ fi
 			<dict>
 				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
 				<string>AppIcon</string>
+				<key>CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES</key>
+				<string>YES</string>
 				<key>INFOPLIST_FILE</key>
 				<string>test_sibling_dependencies/Info.plist</string>
 				<key>LD_RUNPATH_SEARCH_PATHS</key>
