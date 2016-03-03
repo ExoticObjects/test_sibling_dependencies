@@ -12,7 +12,7 @@
     "ios": "9.0"
   },
   "source": {
-    "git": "https://github.com/ExoticObjects/test_sibling_dependencies_pod_b.git"
+    "git": "git@github.com:ExoticObjects/test_sibling_dependencies_pod_b.git"
   },
   "requires_arc": true,
   "source_files": "Pod/Classes/**/*",

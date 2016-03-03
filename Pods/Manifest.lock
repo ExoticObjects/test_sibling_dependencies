@@ -15,11 +15,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   test_sibling_dependencies_pod_a_framework:
-    :commit: dd1f428956180af4c535f4a7a6c8979008a9bec5
+    :commit: 8c2d2f22d5ee0898d502583b53c40fb88615c703
     :git: https://github.com/ExoticObjects/test_sibling_dependencies_pod_a_framework.git
 
 SPEC CHECKSUMS:
-  test_sibling_dependencies_pod_a_framework: 41a0dc0ae8321d7be2ecc77dac1e2af9a34da063
-  test_sibling_dependencies_pod_b: 4087536d114c1ce2ce85fa5c270ad08f07e98c89
+  test_sibling_dependencies_pod_a_framework: 8d0eb9f7c2cbe06f16444d4f322a164e9d9bcb76
+  test_sibling_dependencies_pod_b: 37f4ab4a226859bd961d49a036e4afeca0b29ef2
 
 COCOAPODS: 0.39.0

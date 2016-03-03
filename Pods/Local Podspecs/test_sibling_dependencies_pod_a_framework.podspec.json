@@ -11,6 +11,7 @@
   "description": "Pod description. It's a pod",
   "requires_arc": true,
   "source": {
+    "git": "https://github.com/ExoticObjects/test_sibling_dependencies_pod_a_framework.git"
   },
   "platforms": {
     "ios": "9.0"
@@ -34,7 +35,6 @@
   "ios": {
     "preserve_paths": "ios/test_sibling_dependencies_pod_a.embeddedframework/test_sibling_dependencies_pod_a.framework",
     "public_header_files": "ios/test_sibling_dependencies_pod_a.embeddedframework/test_sibling_dependencies_pod_a.framework/Versions/A/Headers/*.h",
-    "resources": "ios/test_sibling_dependencies_pod_a.embeddedframework/test_sibling_dependencies_pod_a.framework/Versions/A/Resources/**/*",
     "vendored_frameworks": "ios/test_sibling_dependencies_pod_a.embeddedframework/test_sibling_dependencies_pod_a.framework"
   }
 }
