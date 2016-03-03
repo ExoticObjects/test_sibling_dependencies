@@ -1,7 +1,10 @@
 
-source 'https://github.com/CocoaPods/Specs.git' # Need to list main cocoapods repo as a 'source' or place to look for code. It should be last. Pods found in private repos above will be used in favor of pods with the same name in public repo.
+source 'https://github.com/CocoaPods/Specs.git'
 
-# include source for a framework that I'm making. This should (I think) enable me to list it as a dependency of pod b.
+# include source for a framework that I'm making. This should (I think) enable me to list it as a 
+# dependency of pod b. 
+# See https://github.com/ExoticObjects/test_sibling_dependencies_pod_b/blob/master/test_sibling_dependencies_pod_b.podspec
+# for the dependency listing.
 source 'https://github.com/ExoticObjects/test_sibling_dependencies_pod_a_framework.git'
 
 platform :ios, '9.0'
@@ -14,7 +17,7 @@ end
 
 def common_pods_for_target
 
-  # point at repo
+  # point at repo of source code
   # pod 'test_sibling_dependencies_pod_a', :git => 'https://github.com/ExoticObjects/test_sibling_dependencies_pod_a.git'
   
   # point at dev pod
@@ -23,10 +26,10 @@ def common_pods_for_target
   # point at framework made from dev pod
   # pod 'test_sibling_dependencies_pod_a_framework', :path => '../test_sibling_dependencies_pod_a_framework/'
 
-  # or at that same pod on github
+  # point at framework on github
   pod 'test_sibling_dependencies_pod_a_framework', :git => 'https://github.com/ExoticObjects/test_sibling_dependencies_pod_a_framework.git'
   
-  # local pod_b has a dependency on the pod_a framework 
+  # local pod_b has a dependency on the pod_a framework, but it doesn't work!
   pod 'test_sibling_dependencies_pod_b', :path => '../test_sibling_dependencies_pod_b/'
 
 end
