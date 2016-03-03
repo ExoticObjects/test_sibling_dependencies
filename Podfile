@@ -31,7 +31,10 @@ def common_pods_for_target
   pod 'test_sibling_dependencies_pod_a_framework', :git => 'https://github.com/ExoticObjects/test_sibling_dependencies_pod_a_framework.git'
   
   # local pod_b has a dependency on the pod_a framework, but it doesn't work!
-  pod 'test_sibling_dependencies_pod_b', :path => '../test_sibling_dependencies_pod_b/'
+  # pod 'test_sibling_dependencies_pod_b', :path => '../test_sibling_dependencies_pod_b/'
+
+  # pod_b from github
+  pod 'test_sibling_dependencies_pod_b', :git => 'git@github.com:ExoticObjects/test_sibling_dependencies_pod_b.git'
 
 end
 
