@@ -4,14 +4,14 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "4ACF2B95C609E44880838B34E22E2DF0BF6D3825" : 0,
+    "B34F1E95442B303649E90FFA4FB2868AD883B348" : 0,
     "101C8974BCA6463E0B09A029FD0FDC03068BB538" : 0,
     "4F2BF3969AA1A833E3E0DAC1A94CDDADF614A32A" : 0,
     "71F6ADCC44A4C64FBEE4D7A5402EA714F4DDA79A" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "761EFA67-32A7-4D58-B3A7-FD4DF870E0DC",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "4ACF2B95C609E44880838B34E22E2DF0BF6D3825" : "test_sibling_dependencies_pod_a\/",
+    "B34F1E95442B303649E90FFA4FB2868AD883B348" : "test_sibling_dependencies_pod_a\/",
     "101C8974BCA6463E0B09A029FD0FDC03068BB538" : "test_sibling_dependencies_pod_b\/",
     "4F2BF3969AA1A833E3E0DAC1A94CDDADF614A32A" : "test_sibling_dependencies\/",
     "71F6ADCC44A4C64FBEE4D7A5402EA714F4DDA79A" : "test_sibling_dependencies_pod_a_framework\/"
@@ -26,11 +26,6 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "101C8974BCA6463E0B09A029FD0FDC03068BB538"
     },
     {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ExoticObjects\/test_sibling_dependencies_pod_a.git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4ACF2B95C609E44880838B34E22E2DF0BF6D3825"
-    },
-    {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ExoticObjects\/test_sibling_dependencies.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4F2BF3969AA1A833E3E0DAC1A94CDDADF614A32A"
@@ -39,6 +34,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ExoticObjects\/test_sibling_dependencies_pod_a_framework.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "71F6ADCC44A4C64FBEE4D7A5402EA714F4DDA79A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ExoticObjects\/test_sibling_dependencies_pod_a.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B34F1E95442B303649E90FFA4FB2868AD883B348"
     }
   ]
 }
