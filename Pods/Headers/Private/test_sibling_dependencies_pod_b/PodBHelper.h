@@ -1,1 +1,0 @@
-../../../test_sibling_dependencies_pod_b/Pod/Classes/PodBHelper.h

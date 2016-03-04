@@ -1,8 +1,0 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/test_sibling_dependencies_pod_a_framework/ios/test_sibling_dependencies_pod_a.embeddedframework"
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/test_sibling_dependencies_pod_a_framework"
-LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/test_sibling_dependencies_pod_b.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/test_sibling_dependencies_pod_a_framework"
-OTHER_LDFLAGS = $(inherited) -ObjC -framework "CoreData" -framework "CoreGraphics" -framework "CoreImage" -framework "CoreLocation" -framework "CoreText" -framework "Foundation" -framework "ImageIO" -framework "MapKit" -framework "MessageUI" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit" -framework "test_sibling_dependencies_pod_a" -framework "test_sibling_dependencies_pod_b"
-PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-test_sibling_dependencies
-PODS_ROOT = ${SRCROOT}/Pods
