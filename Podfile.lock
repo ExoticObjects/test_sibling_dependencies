@@ -5,18 +5,21 @@ PODS:
 
 DEPENDENCIES:
   - test_sibling_dependencies_pod_a_framework (from `https://github.com/ExoticObjects/test_sibling_dependencies_pod_a_framework.git`)
-  - test_sibling_dependencies_pod_b (from `../test_sibling_dependencies_pod_b/`)
+  - test_sibling_dependencies_pod_b (from `git@github.com:ExoticObjects/test_sibling_dependencies_pod_b.git`)
 
 EXTERNAL SOURCES:
   test_sibling_dependencies_pod_a_framework:
     :git: https://github.com/ExoticObjects/test_sibling_dependencies_pod_a_framework.git
   test_sibling_dependencies_pod_b:
-    :path: "../test_sibling_dependencies_pod_b/"
+    :git: git@github.com:ExoticObjects/test_sibling_dependencies_pod_b.git
 
 CHECKOUT OPTIONS:
   test_sibling_dependencies_pod_a_framework:
     :commit: 8c2d2f22d5ee0898d502583b53c40fb88615c703
     :git: https://github.com/ExoticObjects/test_sibling_dependencies_pod_a_framework.git
+  test_sibling_dependencies_pod_b:
+    :commit: f06ea1e838e35d159420262070953d0f91fa562a
+    :git: git@github.com:ExoticObjects/test_sibling_dependencies_pod_b.git
 
 SPEC CHECKSUMS:
   test_sibling_dependencies_pod_a_framework: 8d0eb9f7c2cbe06f16444d4f322a164e9d9bcb76

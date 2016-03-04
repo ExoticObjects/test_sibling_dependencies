@@ -22,14 +22,14 @@ def common_pods_for_target
   # pod 'test_sibling_dependencies_pod_a_framework', :path => '../test_sibling_dependencies_pod_a_framework/'
 
 
-  # point at framework on github. This framework can be accessed from the app delegate, but not from pod_b (below).
+  # point at pod_a framework on github. This framework can be accessed from the app delegate, but not from pod_b (below).
   pod 'test_sibling_dependencies_pod_a_framework', :git => 'https://github.com/ExoticObjects/test_sibling_dependencies_pod_a_framework.git'
   
-  # local pod_b has a dependency on the pod_a framework, but it doesn't work!
-  pod 'test_sibling_dependencies_pod_b', :path => '../test_sibling_dependencies_pod_b/'
+  # local pod_b
+  # pod 'test_sibling_dependencies_pod_b', :path => '../test_sibling_dependencies_pod_b/'
 
-  # pod_b from github
-  # pod 'test_sibling_dependencies_pod_b', :git => 'git@github.com:ExoticObjects/test_sibling_dependencies_pod_b.git'
+  # pod_b from github - has a dependency on the pod_a framework, but it doesn't work!
+  pod 'test_sibling_dependencies_pod_b', :git => 'git@github.com:ExoticObjects/test_sibling_dependencies_pod_b.git'
 
 end
 
@@ -40,7 +40,7 @@ pre_install do |installer|
 end
 
 
-# POST INSTALL HOOK
+# POST INSTALL HOOK - don't know if I need this, but I tried it...
 post_install do |installer|
 
   files = Dir.glob("*.xcodeproj")
