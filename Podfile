@@ -10,6 +10,11 @@ source 'https://github.com/ExoticObjects/test_sibling_dependencies_pod_a_framewo
 platform :ios, '9.0'
 use_frameworks!
 
+pre_install do |installer|
+  # workaround for https://github.com/CocoaPods/CocoaPods/issues/3289
+  def installer.verify_no_static_framework_transitive_dependencies; end
+end
+
 def common_pods_for_target
 
   # POD_A framework. This framework can be accessed from the app delegate, but not from POD_B (below).
