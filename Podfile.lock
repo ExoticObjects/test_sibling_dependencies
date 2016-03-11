@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   test_sibling_dependencies_pod_a_framework:
-    :commit: 21ad6987357d040a569d8a626320702cfcdcebde
+    :commit: 68d471fc44e9a4f4b00d77fecc8167284abfad05
     :git: https://github.com/ExoticObjects/test_sibling_dependencies_pod_a_framework.git
   test_sibling_dependencies_pod_b:
     :commit: f06ea1e838e35d159420262070953d0f91fa562a

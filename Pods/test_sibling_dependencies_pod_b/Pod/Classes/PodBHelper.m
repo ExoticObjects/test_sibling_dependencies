@@ -3,7 +3,8 @@
 //
 
 #import "PodBHelper.h"
-#import <test_sibling_dependencies_pod_a/PodAHelper.h>
+//#import <test_sibling_dependencies_pod_a/PodAHelper.h>
+//#import <tes
 
 @implementation PodBHelper {
 
